@@ -1,0 +1,94 @@
+
+
+:root {
+  --primary: #FEA116;
+  --light: #F1F8FF;
+  --dark: #0F172B;
+}
+
+.home{
+  text-align: center;
+  width: 100%;
+}
+
+.btn{
+  /* width: 50%; */
+  background-color: var(--primary);
+}
+
+.btn:active{
+  /* width: 50%; */
+  background-color: var(--primary) !important;
+}
+
+.spinnerImag{
+  max-width: 500px;
+  animation: rotation 50s infinite linear;
+}
+
+.column1{
+  text-align: center;
+}
+
+.box{
+  height: 15%;
+}
+
+h3{
+  font-family: cursive
+}
+
+.form{
+  background-color: var(--dark);
+}
+
+p{
+  font-family: "Heebo",sans-serif;
+  text-align: justify;
+}
+@media screen and (max-width: 991px) {
+  .spinnerImag{
+    max-width: 400px;
+    animation: rotation 50s infinite linear;
+  }
+
+  .column1{
+    text-align: center;
+  }
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.reservation{
+  color: var(--primary);
+  font-family: cursive;
+}
+
+.title{
+  color: var(--primary);
+}
+
+.card5c:hover, .card5c:hover .card-text{
+  background-color: #FEA116;
+  color: #fff;
+}
+
+.footer{
+  background-color: var(--dark);
+  color: #F1F8FF;
+  padding: 5rem;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}

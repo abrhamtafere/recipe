@@ -1,0 +1,40 @@
+:root {
+  --primary: #FEA116;
+  --light: #F1F8FF;
+  --dark: #0F172B;
+}
+
+.card1, .card2{
+  background-color: #fff;
+  border: none;
+}
+
+
+
+.card-text{
+  color: #6c757d;
+  font-family: "Heebo",sans-serif;
+  text-align: justify;
+}
+
+.icon{
+  color: #FEA116;
+}
+
+.icon:hover{
+  color: #fff;
+}
+
+.card1:hover .card-text, .card1:hover, .card1:hover .icon{
+  background-color: var(--primary);
+  color: white !important;
+  transition: background-color 0.25s;
+}
+
+.price{
+  color: #FEA116;
+  text-align: end;
+}
+.card3p{
+  justify-content: space-between;
+}

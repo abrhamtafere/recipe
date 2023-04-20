@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Kristi&family=Nunito+Sans:wght@900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+nav{
+  font-family: "Heebo",sans-serif;
+  z-index: 3;
+}
+.container-fluid{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav-link{
+  color: var(--light);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.nav-link:hover{
+  color: var(--primary) ;
+}
+
+nav .nav-link.active {
+  color: var(--primary) !important;
+}
+
+.btn{
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 500;
+  border: none;
+  width: 25%;
+}
+
+.btn:hover{
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* .fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+} */
+
+
+.navbar-brand{
+  color: var(--primary);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  padding: 0 0 0 0 ;
+
+}
+
+.navbar{
+  
+  /* margin-right: 0px;
+  background-color: var(--dark);
+  width: 100%;
+  transition: padding 2s; */
+  /* padding-bottom: 0px; */
+ 
+}
+
+.navbar.active{
+  position: fixed;
+  /* margin-right: 0px; */
+  background-color: var(--dark);
+  /* width: 100%; */
+  transition: padding 2s;
+  /* padding-bottom: 0px; */
+ 
+}
+
+.navbar-brand:hover{
+  color: var(--primary);
+}
+
+@media screen and (max-width: 991px) {
+.navbar-collapse{
+  border-top: solid 1px gray;
+}
+
+nav {
+  border-bottom: solid 1px grey;
+}
+
+.navbar{
+  position: fixed;
+  margin-right: 0px;
+  background: var(--dark);
+  width: 100%;
+}
+}
