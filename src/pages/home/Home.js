@@ -129,6 +129,7 @@ const Home = () => {
         </div>
         </div>
         <div className='col-md-12 col-lg-6 form ms-0 col-sm-12'>
+          <p id='about' ></p>
           <FormField />
         </div>
       </div>
@@ -174,7 +175,7 @@ const Home = () => {
       <Footer />
       <hr/>
       <div className='row d-flex flex-row justify-content-space-between'>
-        <p className='col-12 col-sm-6' >© Mystery Code | All Right Reserved.</p>
+        <p className='col-12 col-sm-6' >© abrish aastu | All Right Reserved.</p>
         <p className='col-12 col-sm-6 text-end' >
         <a href='#'> Home </a> | <a href='#'> Service </a> | <a href='#'> Contact </a> | <a href='#'> About </a> 
         </p>

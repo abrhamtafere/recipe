@@ -28,14 +28,14 @@ const Navigationbar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" className={navbar ? "container-fluid active" : " container-fluid"}    variant="dark">
       <div className="container-fluid" >
-        <Navbar.Brand href="#home" className='mb-sm-2'>
+        <Navbar.Brand href="/" className='mb-sm-2'>
           <FontAwesomeIcon icon={faUtensils} style={{color: '#FEA116', marginRight: '10px'}}/>
           Restorant</Navbar.Brand>
         <Navbar.Toggle  className='mb-sm-2' aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/">home</Nav.Link>
-            <Nav.Link href="/about">about</Nav.Link>
+            <Nav.Link href="#about">about</Nav.Link>
             <Nav.Link href="/service">service</Nav.Link>
             <Nav.Link href="/menu">menu</Nav.Link>
             <NavDropdown title="PAGES" id="collasible-nav-dropdown">
