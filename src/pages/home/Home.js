@@ -49,7 +49,7 @@ const Home = () => {
       <div className='row container m-auto'>
         { Info.map((element, i) =>(
           
-          <motion.div className='col-3 '
+          <motion.div className='col-lg-3 col-md-6 col-sm-12 mx-auto'
             key={element.id}
             initial={{x: -400, y: 400, translateX: -50, translateY: 50, opacity: 0}}
             animate={{x: 0, y: 0, translateX: 0, translateY: 0, opacity: 1}}
@@ -62,12 +62,12 @@ const Home = () => {
         ))}    
       </div>
       <div className='row'>
-        <div className='col-6 row'>
+        <div className='col-12 col-sm-12 col-lg-6 row'>
         {/* <div className='col-6'> */}
         {
           photos.map((photo, i) => (
             <motion.div 
-            className='col-5 mb-5 ms-4'
+            className='col-6 col-sm-5 col-lg-5 mb-5 ms-4'
             key={photo.id}
             initial={{scale: 0, opacity: 0}}
             animate={{ scale: (i===1||i===2) ? 0.7 : 1.1, opacity: 1}}
@@ -82,19 +82,19 @@ const Home = () => {
             
         </div>
         
-        <div className='col-6'>
+        <div className=' col-12 col-sm-12 col-lg-6 text-center'>
             <h1 className='font-monospace'>About Us</h1>
-            <p>
+            <p className='text-center'>
               <h1 className='display-5 m-2'>Welcome to Restorant</h1>
               Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam<br/> amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.<br/><br/>
 
               Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam<br/> amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita<br/> duo justo magna dolore erat amet
             </p>
-            <div className='row'>
-              <div className='col-sm-6 d-flex'>
+            <div className='row text-center'>
+              <div className='col-md-6 col-sm-12 d-flex text-center'>
                 <h1 className='counter fw-bold d-flex '>|<Counter from={0} to={15} /></h1><p className='text-muted fs-6'>Years of<p className=' fs-3 text-dark fw-bold'>Experiance</p></p>
               </div>
-              <div className='col-sm-6 d-flex'>
+              <div className='col-md-6 col-sm-12 d-flex text-center'>
                 <h1 className='counter fw-bold'><Counter from={0} to={50} /></h1><p className='text-muted fs-4'>Popular<p className=' fs-3 text-dark fw-bold'>Master Chief</p></p>
               </div>
               <div className='row'>
@@ -107,14 +107,14 @@ const Home = () => {
       <div className='row container m-auto'>
         <p className='display-6 text-center title' >___Food Menu___</p>
         <p className='display-6 fw-bold  text-center' >Most Popular Items</p>
-        <div className='col-6'>
+        <div className='col-md-6 col-sm-12'>
           {
             menu1.map((el, i)=>(
               <Card3 title={el.title} content={el.content} price={el.price} img={el.img}/>
             ))
           }
         </div>
-        <div className='col-6'>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
           {
             menu2.map((el, i)=>(
               <Card3 title={el.title} content={el.content} price={el.price} img={el.img}/>
@@ -128,7 +128,7 @@ const Home = () => {
           <iframe src="https://www.youtube.com/embed/jGIBvENjjFs" title="YouTube video" allowfullscreen></iframe>
         </div>
         </div>
-        <div className='col-md-6 col-lg-6 form ms-0 col-sm-12'>
+        <div className='col-md-12 col-lg-6 form ms-0 col-sm-12'>
           <FormField />
         </div>
       </div>
@@ -137,16 +137,16 @@ const Home = () => {
         <p className='display-6 fw-bold  text-center' >Our Master Chefss</p>
       </div>
       <div className='row container m-auto'>
-      <div className='col-3'>
+      <div className='col-lg-3 col-md-6 col-sm-12'>
           <Card4 photo={People[0].img}/>
         </div>
-        <div className='col-3'>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
           <Card4 photo={People[1].img}/>
         </div>
-        <div className='col-3'>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
           <Card4 photo={People[2].img}/>
         </div>
-        <div className='col-3'>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
           <Card4 photo={People[3].img}/>
         </div>
       </div>
@@ -174,9 +174,9 @@ const Home = () => {
       <Footer />
       <hr/>
       <div className='row d-flex flex-row justify-content-space-between'>
-        <p className='col-6' >© Mystery Code | All Right Reserved.</p>
-        <p className='col-6 text-end' >
-        <a href='#'> Home </a> | <a href='#'> Home </a> | <a href='#'> Home </a> | <a href='#'> Home </a> 
+        <p className='col-12 col-sm-6' >© Mystery Code | All Right Reserved.</p>
+        <p className='col-12 col-sm-6 text-end' >
+        <a href='#'> Home </a> | <a href='#'> Service </a> | <a href='#'> Contact </a> | <a href='#'> About </a> 
         </p>
       </div>
     </footer>

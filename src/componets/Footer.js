@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className='row'>
-      <div className="col-3">
+      <div className="col-12 col-sm-6 col-lg-3">
         <h1 className="header">Company</h1>
         <ul>
           <li>About Us </li>
@@ -11,7 +11,7 @@ const Footer = () => {
           <li>Terms &amp; Condition </li>
         </ul>
       </div>
-      <div className="col-3">
+      <div className="col-12 col-sm-6 col-lg-3">
         <h1 className="header">Contact</h1>
         <ul>
           <li>123 Street, New York, USA </li>
@@ -21,7 +21,7 @@ const Footer = () => {
           <li>Terms &amp; Condition </li>
         </ul>
       </div>
-      <div className="col-3">
+      <div className="col-12 col-sm-6 col-lg-3">
         <h1 className="header">Opening</h1>
         <ul  style={{listStyle: 'none'}}>
           <li>Monday - Saturday</li>
@@ -30,7 +30,7 @@ const Footer = () => {
           <li>10AM - 08PM</li>
         </ul>
       </div>
-      <div className="col-3">
+      <div className="col-12 col-sm-6 col-lg-3">
         <h1 className="header">Newsletter</h1>
         <ul style={{listStyle: 'none'}}>
         <li>Dolor amet sit justo amet elitr clita ipsum elitr est.</li>
