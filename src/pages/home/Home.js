@@ -125,7 +125,7 @@ const Home = () => {
       <div className='row'>
         <div className='col-md-6 col-lg-6  me-0 col-sm-12'>
         <div class="ratio ratio-16x9 h-100  me-0">
-          <iframe src="https://www.youtube.com/embed/jGIBvENjjFs" title="YouTube video" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/fYjgbebSsag" title="YouTube video" allowfullscreen></iframe>
         </div>
         </div>
         <div className='col-md-12 col-lg-6 form ms-0 col-sm-12'>
